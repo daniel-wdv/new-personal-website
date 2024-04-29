@@ -17,8 +17,8 @@ export const ProjectsData: ProjectsType[] = [
     title: 'React | Minimal Personal Website',
     description: `Developed this react minimal personal website while learning this technology`,
     image: personalWebsiteImage,
-    GitHub: '#',
-    hosted: 'https://erfjs.com',
+    GitHub: 'https://github.com/daniel-wdv/new-personal-website/tree/master',
+    hosted: 'https://danielcarvalho.netlify.app',
   },
   {
     title: 'Timer Game',
