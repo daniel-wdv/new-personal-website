@@ -23,7 +23,7 @@
     h2 {
       font-weight: 500;
       font-size: 1.4rem;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.7rem;
       white-space: nowrap;
       overflow: hidden;
       display: block;
@@ -40,8 +40,13 @@
     }
   }
 
+  .projects_title {
+    text-align: center;
+  }
+
   .buttons {
     margin: 20px 0 10px 0;
+    text-align: center;
 
     .github,
     .hosted {

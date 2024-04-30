@@ -68,10 +68,31 @@
   }
 
   .title {
-    margin: 2.5rem 0 1.5rem 0;
+    margin: 1.5rem 0 1.5rem 0;
     font-size: 2.4rem;
     font-weight: 500;
     text-align: center;
+  }
+
+  button {
+    width: 17vw;
+    margin-top: 1rem;
+    padding: 0.8rem 0.5rem 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background:radial-gradient(#186a5e,#053339);
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.4);
+  }
+
+  button:hover {
+    background: #053339;
+    color: #ffffff8a;
   }
 
   .about {
@@ -84,12 +105,29 @@
   }
 
   .about_next {
-    margin-bottom: 3rem;
+    margin-bottom: 1.1rem;
     font-size: 1.6rem;
     font-weight: 400;
     color: #3f3f3fe0;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 12s forwards,
+    blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
   }
 
   .links {

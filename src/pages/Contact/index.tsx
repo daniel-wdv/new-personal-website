@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Lottie from "react-lottie";
+import { MdContactMail } from "react-icons/md";
 
 import { pageVariants, pageTransition } from "../../utils/FramerAnimation";
 import styles from "./contact.module.scss";
@@ -27,15 +27,6 @@ const Contact = () => {
       email: "",
       message: "",
     });
-  };
-
-  const defaultOptions = {
-    loop: false,
-    autoplay: true,
-    animationData: lottieData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
   };
 
   return (
@@ -79,14 +70,8 @@ const Contact = () => {
             <button type='submit'>Send</button>
           </form>
         </div>
-        <div className={styles.lottie}>
-          <Lottie
-            options={defaultOptions}
-            height='100%'
-            width='100%'
-            isStopped={false}
-            isPaused={false}
-          />
+        <div>
+          <MdContactMail color="#186a5e" size="10em"/>
         </div>
       </motion.div>
     </div>

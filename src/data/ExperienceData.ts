@@ -7,7 +7,7 @@ interface ExperienceDataType {
 export const ExperienceData: ExperienceDataType[] = [
   {
     title: "FullStack Developer | Impresa",
-    date: " June 2023 _ Present",
+    date: " June 2023 - Present",
     details: [
       "Working in an agile development team",
       "Working in a project called EPG (Eletronic Programming Guide), that basically extracts, transforms and loads Data (ETL using Python Pandas). After a lot of Data processment rules, we export the Data to our clients FTPS so they can use that information on the TV boxes. We work with big clients like Vodafone and NOS",
@@ -16,7 +16,7 @@ export const ExperienceData: ExperienceDataType[] = [
     ],
   },
   {
-    title: "Software Developer | ISSHO Technology",
+    title: "Software Developer | ISSHO Technolog",
     date: "July 2022 - June 2023",
     details: [
       "Developing a software that worked has a 3D platform that could do 3D product configuration, Quotation, CRM and BOM",

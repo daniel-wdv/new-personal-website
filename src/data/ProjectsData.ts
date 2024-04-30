@@ -4,6 +4,7 @@ import placePickerImage from "../assets/place-picker.png"
 import quizImage from "../assets/quiz-app.png"
 import timerGame from "../assets/timer-game.png"
 import personalWebsiteImage from "../assets/personal-website.png"
+import clinicImage from "../assets/clinic-system.png"
 interface ProjectsType {
   title: string
   description: string
@@ -13,6 +14,13 @@ interface ProjectsType {
 }
 
 export const ProjectsData: ProjectsType[] = [
+  {
+    title: 'WIP | Clinic Apointment System',
+    description: `This is a new project that im working at the moment and it still not finished. Will go live when its done`,
+    image: clinicImage,
+    GitHub: '#',
+    hosted: '#',
+  },
   {
     title: 'React | Minimal Personal Website',
     description: `Developed this react minimal personal website while learning this technology`,

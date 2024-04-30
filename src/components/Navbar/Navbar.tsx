@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <>
       <div className={styles.navbar}>
+        <div>
         <h2 className={styles.logo}>Personal Website</h2>
+        </div>
         <div className={styles.desktopitems}>
           {LinksData.map((link) => (
             <NavLink

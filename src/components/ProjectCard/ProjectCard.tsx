@@ -18,7 +18,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
         <img src={props.image} alt={props.title} />
       </div>
       <div className={styles.content}>
-        <h2>{props.title}</h2>
+        <h2 className={styles.projects_title}>{props.title}</h2>
         <p>{props.description}</p>
         <div className={styles.buttons}>
           {props.GitHub && <LinkButton isGitHub={true} link={props.GitHub} />}

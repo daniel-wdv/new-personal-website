@@ -18,11 +18,31 @@
   // border-bottom: 2px solid #000000e7;
 
   .logo {
+    display: inline-block;
     font-size: 2rem;
     letter-spacing: 0.01vw;
     cursor: pointer;
     color: $lightwhite;
     transition: all 0.3s ease;
+    font-family: 'Ubuntu Mono';
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 3s forwards,
+    blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
   }
 
   .desktopitems {
@@ -70,7 +90,7 @@
 
 .mobileMenuModal {
   position: fixed;
-  background-color: #3c83f3;
+  background-color: radial-gradient(#186a5e,#053339);
   left: 0;
   top: 0;
   width: 100%;

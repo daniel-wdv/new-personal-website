@@ -1,6 +1,4 @@
-const Flip = require("react-reveal/Flip");
 import { motion } from "framer-motion";
-
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import { ProjectsData } from "../../data/ProjectsData";
 import { pageVariants, pageTransition } from "../../utils/FramerAnimation";
@@ -13,9 +11,9 @@ const Projects = () => {
   return (
     <div className={styles.projects}>
       <motion.div
-        initial='init'
-        animate='anim'
-        exit='last'
+        initial="init"
+        animate="anim"
+        exit="last"
         variants={pageVariants}
         transition={pageTransition}
       >
@@ -25,27 +23,23 @@ const Projects = () => {
           <div className={styles.projects_content}>
             {ProjectsData.map((item, index) =>
               index % 2 === 0 ? (
-                <Flip top key={item.title}>
-                  <ProjectCard
-                    key={item.title}
-                    title={item.title}
-                    description={item.description}
-                    image={item.image}
-                    GitHub={item.GitHub}
-                    hosted={item.hosted}
-                  />
-                </Flip>
+                <ProjectCard
+                  key={item.title}
+                  title={item.title}
+                  description={item.description}
+                  image={item.image}
+                  GitHub={item.GitHub}
+                  hosted={item.hosted}
+                />
               ) : (
-                <Flip bottom key={item.title}>
-                  <ProjectCard
-                    key={item.title}
-                    title={item.title}
-                    description={item.description}
-                    image={item.image}
-                    GitHub={item.GitHub}
-                    hosted={item.hosted}
-                  />
-                </Flip>
+                <ProjectCard
+                  key={item.title}
+                  title={item.title}
+                  description={item.description}
+                  image={item.image}
+                  GitHub={item.GitHub}
+                  hosted={item.hosted}
+                />
               )
             )}
           </div>
