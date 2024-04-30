@@ -7,7 +7,7 @@ import { Zoom } from "react-awesome-reveal";
 const welcomeText = `${AboutData.firstName}  ${AboutData.lastName}`;
 
 const Home = () => {
-  const cvLink = "#";
+  const cvLink = "https://daniel-carvalho-cv-2024.tiiny.site/";
 
   return (
     <div className={styles.home}>
