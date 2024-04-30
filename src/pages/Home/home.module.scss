@@ -75,7 +75,7 @@
   }
 
   button {
-    width: 17vw;
+    // width: 17vw;
     margin-top: 1rem;
     padding: 0.8rem 0.5rem 0.5rem;
     outline: none;
@@ -186,5 +186,11 @@
     .about_next {
       font-size: 1.3rem;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  button {
+    width: 17vw;
   }
 }
